@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vasanth - Professional Full Stack Developer Portfolio website. Discover modern web designs, interactive interfaces, and cutting-edge software solutions.">
+  <meta name="keywords" content="Portfolio, Full Stack Developer, Web Design, React, Node.js, Frontend, Backend, UI/UX">
+  <meta name="author" content="Alex Carter">
+  
+  <title>Vasanth | Creative Developer Portfolio</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="glow-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="logo" id="nav-logo">
+          Alex<span>Carter</span>
+          <div class="logo-dot"></div>
+        </a>
+        
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+          <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+        
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle Navigation Menu">
+          <div class="menu-btn-burger"></div>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-subtitle">Welcome to my space</span>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Vasanth</span><br>
+            <span class="typed-text">Full Stack Developer</span><span class="cursor">&nbsp;</span>
+          </h1>
+          <p class="hero-desc">
+            I craft high-performance web applications, beautiful user interfaces, and scalable backend architectures. Let's build something extraordinary together.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-work">View My Work <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-talk">Let's Talk</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="avatar.png" alt="Alex Carter - Developer Portrait" class="avatar-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#about" class="hero-scroll-btn" id="hero-scroll-btn" aria-label="Scroll Down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">My Background</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text" id="about-text-container">
+          <h3>Passionate about building software that solves real problems.</h3>
+          <p>
+            With over 5 years of industry experience, I specialize in architecting modern web applications from design concept to cloud deployment. I bridge the gap between frontend aesthetics and backend scalability.
+          </p>
+          <p>
+            My mission is to create digital experiences that are not only visually stunning but also technically flawless, accessible, and optimized for maximum performance.
+          </p>
+          <a href="#contact" class="btn btn-primary" id="btn-about-hire">Hire Me</a>
+        </div>
+        
+        <div class="about-stats" id="about-stats-container">
+          <div class="stats-grid">
+            <div class="stat-card" id="stat-experience">
+              <div class="stat-number gradient-text">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card" id="stat-projects">
+              <div class="stat-number gradient-text">50+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card" id="stat-clients">
+              <div class="stat-number gradient-text">30+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card" id="stat-technologies">
+              <div class="stat-number gradient-text">15+</div>
+              <div class="stat-label">Technologies Mastered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">My Core Expertise</h2>
+      </div>
+      
+      <div class="skills-grid" id="skills-grid-container">
+        <!-- Frontend Development -->
+        <div class="skill-card" id="skill-frontend">
+          <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="skill-name">Frontend Dev</h3>
+          <p class="skill-level">React / Next.js / Vue</p>
+        </div>
+        
+        <!-- Backend Development -->
+        <div class="skill-card" id="skill-backend">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h3 class="skill-name">Backend Dev</h3>
+          <p class="skill-level">Node.js / Express / Python</p>
+        </div>
+        
+        <!-- Database Management -->
+        <div class="skill-card" id="skill-database">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3 class="skill-name">Database</h3>
+          <p class="skill-level">Postgres / MongoDB / Redis</p>
+        </div>
+        
+        <!-- DevOps & Cloud -->
+        <div class="skill-card" id="skill-cloud">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <h3 class="skill-name">Cloud & DevOps</h3>
+          <p class="skill-level">AWS / Docker / CI/CD</p>
+        </div>
+        
+        <!-- UI/UX Designing -->
+        <div class="skill-card" id="skill-uiux">
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="skill-name">UI/UX Design</h3>
+          <p class="skill-level">Figma / Clean Layouts</p>
+        </div>
+        
+        <!-- Mobile Apps -->
+        <div class="skill-card" id="skill-mobile">
+          <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="skill-name">Mobile Apps</h3>
+          <p class="skill-level">React Native / Flutter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      
+      <div class="projects-grid" id="projects-grid-container">
+        <!-- Project 1 -->
+        <div class="project-card" id="project-card-1">
+          <div class="project-img-wrapper">
+            <img src="project1.png" alt="Cloud analytics dashboard UI layout" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" aria-label="Github Repository"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Chart.js</span>
+            </div>
+            <h3 class="project-title">Enterprise Analytics Dashboard</h3>
+            <p class="project-desc">A highly scalable analytics dashboard tracking real-time user behavior, sales, and platform health metrics using WebSockets.</p>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card" id="project-card-2">
+          <div class="project-img-wrapper">
+            <img src="project2.png" alt="Smart home mobile application interface screenshot" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" aria-label="Github Repository"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">IoT Hub</span>
+              <span class="project-tag">CSS Grid</span>
+            </div>
+            <h3 class="project-title">SmartHome Mobile App</h3>
+            <p class="project-desc">A premium iOS and Android IoT application to monitor and schedule smart appliances, lighting, and home energy consumption levels.</p>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card" id="project-card-3">
+          <div class="project-img-wrapper">
+            <img src="project3.png" alt="Web based code editor UI screenshot" class="project-img" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" aria-label="Github Repository"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Socket.io</span>
+              <span class="project-tag">Redis</span>
+            </div>
+            <h3 class="project-title">Co-Code Editor & Chat</h3>
+            <p class="project-desc">Real-time collaborative code workspace featuring syntax highlighting, running compilers, audio calls, and instant messaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info-container">
+          <div>
+            <h3 class="contact-info-title">Let's talk about your project</h3>
+            <p class="contact-info-desc">
+              Have an exciting idea or need an experienced developer to join your team? Feel free to reach out using the form or through my social media channels.
+            </p>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email Me</span>
+                <span class="contact-item-value">alex.carter@example.com</span>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Call Me</span>
+                <span class="contact-item-value">+1 (555) 019-2834</span>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">San Francisco, CA</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="GitHub Profile Link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn Profile Link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter Profile Link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Dribbble Design Link"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form-card" id="contact-form-container">
+          <form id="contact-form" autocomplete="off">
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder="Name" required>
+              <label for="name" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder="Email" required>
+              <label for="email" class="form-label">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="subject" class="form-input" placeholder="Subject" required>
+              <label for="subject" class="form-label">Subject</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" class="form-input" placeholder="Message" required></textarea>
+              <label for="message" class="form-label">Your Message</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;" id="btn-submit">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            
+            <div id="submit-status" class="submit-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="logo" id="footer-logo">
+          Alex<span>Carter</span>
+          <div class="logo-dot"></div>
+        </a>
+        <p class="footer-text">
+          &copy; 2026 Alex Carter. All rights reserved. Designed with passion.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Interactions -->
+  <script src="script.js"></script>
+</body>
+</html>
